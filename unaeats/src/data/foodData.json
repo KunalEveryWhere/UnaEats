@@ -1,0 +1,98 @@
+[
+    {
+      "id": 1,
+      "name": "Paneer Butter Masala",
+      "price": 180,
+      "category": "Rice & Noodles",
+      "imgSRC": "https://i.ibb.co/2735VMM/img-rice-noodles-1.jpg",
+      "alt": "Paneer Butter Masala"
+    },
+    {
+      "id": 2,
+      "name": "Spicy Fried Noodles",
+      "price": 220,
+      "category": "Rice & Noodles",
+      "imgSRC": "https://i.ibb.co/jvJydfN/img-rice-noodles-2.jpg",
+      "alt": "Spicy Fried Noodles"
+    },
+    {
+      "id": 3,
+      "name": "Shrimp Fried Rice",
+      "price": 160,
+      "category": "Rice & Noodles",
+      "imgSRC": "https://i.ibb.co/yXjMLWv/img-rice-noodles-3.jpg",
+      "alt": "Shrimp Fried Rice"
+    },
+    {
+      "id": 4,
+      "name": "Traditional Ramen",
+      "price": 200,
+      "category": "Rice & Noodles",
+      "imgSRC": "https://i.ibb.co/njvR2zP/img-rice-noodles-4.jpg",
+      "alt": "Traditional Ramen"
+    },
+    {
+      "id": 5,
+      "name": "Cheese Burger",
+      "price": 169,
+      "category": "Fast Food",
+      "imgSRC": "https://i.ibb.co/mCLwhnM/img-fastfood-1.jpg",
+      "alt": "Cheese Burger"
+    },
+    {
+      "id": 6,
+      "name": "Spicy Chicken Wings",
+      "price": 200,
+      "category": "Fast Food",
+      "imgSRC": "https://i.ibb.co/99k9vYz/img-fastfood-2.jpg",
+      "alt": "Spicy Chicken Wings"
+    },
+    {
+      "id": 7,
+      "name": "French Fries",
+      "price": 99,
+      "category": "Fast Food",
+      "imgSRC": "https://i.ibb.co/QYR1ktV/img-fastfood-3.jpg",
+      "alt": "French Fries"
+    },
+    {
+      "id": 8,
+      "name": "Salmon Salad",
+      "price": 200,
+      "category": "Fast Food",
+      "imgSRC": "https://i.ibb.co/NVsb6Xp/img-fastfood-4.jpg",
+      "alt": "Salmon Salad"
+    },
+    {
+      "id": 9,
+      "name": "Orange Juice",
+      "price": 69,
+      "category": "Beverages",
+      "imgSRC": "https://i.ibb.co/f22JDJt/img-beverages-1.jpg",
+      "alt": "Orange Juice"
+    },
+    {
+      "id": 10,
+      "name": "Pina Colada",
+      "price": 220,
+      "category": "Beverages",
+      "imgSRC": "https://i.ibb.co/N69rYMc/img-beverages-2.jpg",
+      "alt": "Pina Colada"
+    },
+    {
+      "id": 11,
+      "name": "Oreo Shake",
+      "price": 100,
+      "category": "Beverages",
+      "imgSRC": "https://i.ibb.co/dJWd60w/img-beverages-3.jpg",
+      "alt": "Oreo Shake"
+    },
+    {
+      "id": 12,
+      "name": "Bubble Tea",
+      "price": 69,
+      "category": "Beverages",
+      "imgSRC": "https://i.ibb.co/XS6Rn9D/img-beverages-4.jpg",
+      "alt": "Bubble Tea"
+    }
+  ]

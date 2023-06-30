@@ -1,0 +1,32 @@
+.historyContainer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  gap: 14px;
+}
+
+.historyItemsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+
+  overflow-y: auto;
+}
+
+.bg-color-white {
+  background-color: #ffffff !important;
+}
+
+@media (max-width: 767px) {
+  .historyItemsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+  }
+}

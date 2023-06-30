@@ -1,0 +1,11 @@
+{
+  "addedToCart": "Item Added to Cart!",
+  "updateItemInCart": "Item Updated in Cart.",
+  "orderedSuccess": "Ordered Successfully!",
+  "orderCartEmpty": "The Cart is Empty!",
+  "cartRemove": "Item Removed from Cart.",
+  "clearCart": "Cart Cleared Successfully",
+  "clearCartEmpty": "Cart Already Empty.",
+  "clearHistory": "History Cleared Successfully",
+  "clearHistoryEmpty": "History Already Cleared."
+}

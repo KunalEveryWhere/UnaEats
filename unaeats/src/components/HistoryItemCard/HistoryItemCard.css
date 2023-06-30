@@ -1,0 +1,54 @@
+.history-item-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+
+  height: fit-content;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-inner-food-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0px;
+}
+
+.history-item-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.history-item-status-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.history-item-status-right > :last-child {
+  margin-top: -6px;
+}
+
+.history-summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-summary-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.history-summary-text i {
+  margin-bottom: -4px;
+}

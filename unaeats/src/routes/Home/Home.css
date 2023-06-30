@@ -1,0 +1,105 @@
+.home-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.categoryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.categoryButton {
+  /* Remove all default */
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20%;
+  height: 100px;
+  background: #ffffff;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  transition: filter 0.2s ease;
+}
+
+.categoryButton:active {
+  transform: scale(0.95);
+  box-shadow: var(--eff-drop-shadow-1);
+}
+
+.categoryButton:hover {
+  filter: brightness(0.8);
+}
+
+.categoryButton-active {
+  background-color: #1e1e1e;
+}
+
+.category-icon {
+  width: 30%;
+  max-width: 60px;
+  height: auto;
+}
+
+.categoryButton-active .category-icon {
+  filter: brightness(0) invert(1);
+}
+
+.popularItemDiv {
+  margin-top: 40px;
+}
+
+.popular-items-title {
+  margin-bottom: 16px !important;
+}
+
+.popular-items-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.font-size-32 {
+  font-size: 32px !important;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  .categoryButton {
+    width: 66px;
+    height: 66px;
+  }
+
+  .category-icon {
+    width: 40%;
+    max-width: 26px;
+    height: auto;
+  }
+
+  .categoryButton:hover {
+    filter: brightness(100%);
+  }
+
+  .popular-items-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+  }
+}

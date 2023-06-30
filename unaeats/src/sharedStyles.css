@@ -1,0 +1,412 @@
+/* Defining the @font-face rule to load the "Product Sans" font */
+/* Regular */
+@font-face {
+  font-family: "Product Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans"), url("./assets/fonts/ProductSans-Regular.woff") format("woff");
+}
+
+/* Medium */
+@font-face {
+  font-family: "Product Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans"), url("./assets/fonts/ProductSans-Medium.woff2") format("woff2");
+}
+
+/* Bold */
+@font-face {
+  font-family: "Product Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans"), url("./assets/fonts/ProductSans-Bold.woff2") format("woff2");
+}
+
+/* Regular-Italic */
+@font-face {
+  font-family: "Product Sans Regular Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans"), url("./assets/fonts/ProductSans-Regular-Italic.woff2") format("woff2");
+}
+
+/* Adding Global CSS Variables */
+:root {
+  /* Color Styles */
+  --color-black-1: #1e1e1e;
+  --color-black-2: #333333;
+  --color-black-3: #4e5156;
+  --color-white-1: #ffffff;
+  --color-white-2: #f2f3f8;
+  --color-yellow-1: #fcd228;
+  --color-yellow-2: #fff0b9;
+  --color-red-1: #ffa498;
+  --color-red-2: #ff6955;
+  --color-green-1: #69c60c;
+
+  /* Text Styles */
+  --ts-header-1: 32px/31px "Product Sans Bold";
+  --ts-type-bold-1: 18px/25px "Product Sans Bold";
+  --ts-type-bold-2: 14px/25px "Product Sans Bold";
+  --ts-type-bold-3: 18px/25px "Product Sans Bold";
+  --ts-type-bold-4: 24px/25px "Product Sans Bold";
+  --ts-type-regular-1: 20px/31px "Product Sans Regular";
+  --ts-type-subtitle-1: 12px/25px "Product Sans Regular";
+
+  /* Drop-Shadow Effects */
+  --eff-drop-shadow-1: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  --eff-drop-shadow-2: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+  /* Others */
+  --background-gradient: linear-gradient(179.97deg, #fcd228 0.03%, #fff0b9 64.96%);
+}
+
+/* Apply Default Styles Everywhere */
+* {
+  font-family: "Product Sans Regular";
+}
+
+body {
+  background-color: var(--color-white-2);
+}
+
+/* Text Styles */
+.ts-header-1 {
+  font: var(--ts-header-1);
+  color: var(--color-black-2);
+}
+
+.ts-type-bold-1 {
+  font: var(--ts-type-bold-1);
+  color: var(--color-black-2);
+}
+
+.ts-type-bold-2 {
+  font: var(--ts-type-bold-2);
+  color: var(--color-black-2);
+}
+
+.ts-type-bold-3 {
+  font: var(--ts-type-bold-3);
+  color: var(--color-black-2);
+}
+
+.ts-type-bold-4 {
+  font: var(--ts-type-bold-4);
+  color: var(--color-black-2);
+}
+
+.ts-type-regular-1 {
+  font: var(--ts-type-regular-1);
+  color: var(--color-black-2);
+}
+
+.ts-type-subtitle-1 {
+  font: var(--ts-type-subtitle-1);
+  color: var(--color-black-2);
+}
+
+/* Colors */
+.color-black-1 {
+  color: var(--color-black-1);
+}
+
+.color-black-2 {
+  color: var(--color-black-2);
+}
+
+.color-black-3 {
+  color: var(--color-black-3);
+}
+
+.bg-color-black-2 {
+  background-color: var(--color-black-2) !important;
+}
+
+/* Background Gradient Rectangle*/
+.bg-gra-rect {
+  position: absolute;
+  width: calc(33.33vw);
+  height: calc(80vh);
+  left: 0px;
+  top: 0px;
+  background: var(--background-gradient);
+  z-index: -1;
+  border-radius: 0px 0px 8px 0px;
+}
+
+.menu-text {
+  font: var(--ts-header-1);
+  color: var(--color-black-2);
+  text-decoration: none;
+  line-height: 1.8em;
+  padding-left: 20px;
+}
+
+.menu-text-last {
+  font: var(--ts-header-1);
+  text-decoration: none;
+  line-height: 1.8em;
+  padding-left: 20px;
+  position: absolute;
+  color: var(--color-yellow-2);
+  background-color: var(--color-black-1);
+  left: 0;
+  bottom: 0;
+  width: 93.5%;
+  margin-bottom: 24px;
+}
+
+.menu-icon {
+  height: 26px;
+  margin-right: 32px;
+}
+
+.bodyContainer {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 48px;
+}
+
+.foodItemDiv {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 30px;
+
+  margin-top: 36px;
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+.foodItemDiv > :first-child {
+  margin-left: 100px !important;
+}
+
+.foodItemDiv > :last-child {
+  margin-right: 100px !important;
+}
+
+.round-button-1 {
+  /* Remove all default */
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.2s;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: var(--color-black-2);
+}
+
+.round-button-1:active {
+  transform: scale(0.9);
+  box-shadow: var(--eff-drop-shadow-1);
+}
+
+.round-button-1 img {
+  height: 24px;
+  width: auto;
+  pointer-events: "none";
+}
+
+.incre-decre-buttons {
+  /* Remove all default */
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.2s;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  transition: transform 0.3s ease;
+}
+
+.incre-decre-buttons:active {
+  transform: scale(0.9);
+  box-shadow: var(--eff-drop-shadow-1);
+}
+
+.incre-decre-buttons img {
+  height: 10px;
+  width: auto;
+  pointer-events: "none";
+}
+
+.incre-decre-buttons .alt {
+  height: auto !important;
+  width: 10px !important;
+}
+
+.decreColor {
+  background-color: var(--color-white-2);
+}
+
+.increColor {
+  background-color: var(--color-yellow-1);
+}
+
+.deleteColor {
+  background-color: var(--color-red-1);
+}
+
+.button-type-A {
+  /* Remove all default */
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.2s;
+
+  height: 48px;
+  width: 330px;
+  border-radius: 100px;
+
+  background-color: var(--color-yellow-1);
+  color: var(--color-black-1);
+  font: var(--ts-type-bold-1);
+  box-shadow: var(--eff-drop-shadow-2);
+}
+
+.button-type-A:active {
+  transform: scale(0.9);
+  box-shadow: var(--eff-drop-shadow-1);
+}
+
+.button-type-B {
+  /* Remove all default */
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.2s;
+
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+
+  background-color: var(--color-white-1);
+  color: var(--color-black-3);
+  font: var(--ts-type-bold-3);
+  box-shadow: var(--eff-drop-shadow-2);
+}
+
+.button-type-B:active {
+  transform: scale(0.9);
+  box-shadow: var(--eff-drop-shadow-1);
+}
+
+.button-type-B img {
+  height: 16px;
+  width: auto;
+  pointer-events: "none";
+}
+
+.hiic--line {
+  border: 0.5px solid var(--color-black-3);
+  width: 100%;
+  opacity: 0.2;
+}
+
+.hr-line {
+  border: 0.5px solid var(--color-black-3);
+  width: 90%;
+  opacity: 0.5;
+}
+
+.name-truncate {
+  white-space: nowrap; /* Prevents the name from wrapping to multiple lines */
+  overflow: hidden; /* Hides any content that exceeds the container's width */
+  text-overflow: ellipsis; /* Adds ellipsis (...) to indicate truncated text */
+  /* max-width: 70%; */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  /* Background Gradient Rectangle*/
+  .bg-gra-rect {
+    width: calc(39.46vw);
+    height: calc(70vh);
+  }
+
+  .bodyContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .foodItemDiv {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .round-button-1 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .round-button-1 img {
+    height: 14px;
+  }
+
+  .incre-decre-buttons {
+    width: 24px;
+    height: 24px;
+  }
+
+  .foodItemDiv > :first-child {
+    margin-left: 20px !important;
+  }
+
+  .foodItemDiv > :last-child {
+    margin-right: 20px !important;
+  }
+
+  .button-type-A {
+    height: 56px;
+  }
+
+  .button-type-B {
+    height: 40px;
+  }
+}
+
+/* CSS styles for iPads here */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
