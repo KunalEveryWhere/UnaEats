@@ -1,0 +1,50 @@
+[
+    {
+      "id": 4,
+      "name": "Traditional Ramen",
+      "price": 200,
+      "category": "Rice & Noodles",
+      "imgSRC": "https://i.ibb.co/njvR2zP/img-rice-noodles-4.jpg",
+      "alt": "Traditional Ramen"
+    },
+    {
+      "id": 8,
+      "name": "Salmon Salad",
+      "price": 200,
+      "category": "Fast Food",
+      "imgSRC": "https://i.ibb.co/NVsb6Xp/img-fastfood-4.jpg",
+      "alt": "Salmon Salad"
+    },
+    {
+      "id": 9,
+      "name": "Orange Juice",
+      "price": 69,
+      "category": "Beverages",
+      "imgSRC": "https://i.ibb.co/f22JDJt/img-beverages-1.jpg",
+      "alt": "Orange Juice"
+    },
+    {
+      "id": 10,
+      "name": "Pina Colada",
+      "price": 220,
+      "category": "Beverages",
+      "imgSRC": "https://i.ibb.co/N69rYMc/img-beverages-2.jpg",
+      "alt": "Pina Colada"
+    },
+    {
+      "id": 11,
+      "name": "Oreo Shake",
+      "price": 100,
+      "category": "Beverages",
+      "imgSRC": "https://i.ibb.co/dJWd60w/img-beverages-3.jpg",
+      "alt": "Oreo Shake"
+    },
+    {
+      "id": 3,
+      "name": "Shrimp Fried Rice",
+      "price": 160,
+      "category": "Rice & Noodles",
+      "imgSRC": "https://i.ibb.co/yXjMLWv/img-rice-noodles-3.jpg",
+      "alt": "Shrimp Fried Rice"
+    }
+]

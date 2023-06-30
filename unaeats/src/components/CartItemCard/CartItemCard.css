@@ -1,0 +1,82 @@
+.CartItemCard {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+  min-height: 150px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.CartItemCard > :first-child {
+  margin-left: 8px;
+}
+
+.CartItemCard > :last-child {
+  margin-right: 8px;
+}
+
+.cartImageContainer {
+  width: 120px;
+  height: 120px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.cartImageContainer img {
+  width: fit-content;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cartContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 60%;
+  height: max-content;
+}
+
+.nameDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+
+  height: 80%;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  .CartItemCard {
+    min-height: 100px;
+  }
+
+  .cartImageContainer {
+    width: 80px;
+    height: 80px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .cartContentContainer {
+    gap: 0px;
+    width: 60%;
+    height: max-content;
+  }
+}

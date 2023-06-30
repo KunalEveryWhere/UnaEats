@@ -1,0 +1,23 @@
+.pageNotFoundContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.pageNotFoundContainer img {
+  width: 50%;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  .pageNotFoundContainer img {
+    width: 100%;
+  }
+
+  .pageNotFoundContainer i {
+    width: 80%;
+  }
+}
